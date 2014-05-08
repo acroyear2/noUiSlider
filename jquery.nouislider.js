@@ -2,7 +2,9 @@
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
-    factory(require('jquery'));
+    var jQuery = require('jquery');
+    require('jquery.classval');
+    factory(jQuery);
   } else {
     factory(jQuery);
   }
