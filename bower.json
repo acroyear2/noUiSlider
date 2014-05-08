@@ -18,7 +18,7 @@
 	],
 	"dependencies": {
 		"jquery": ">= 1.7.0",
-		"classval": ">= 0.1.0"
+		"classval": "git://github.com/acroyear2/classVal.git#41604d06ca4a2538c150d316ca923bb24320beee"
 	},
 	"ignore": [
 		"**/.*",

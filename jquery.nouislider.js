@@ -1,15 +1,12 @@
-/**@preserve
-$.fn.noUiSlider - WTFPL - refreshless.com/nouislider/ */
-
-/*jslint browser: true */
-/*jslint sub: true */
-/*jslint white: true */
-/*jslint continue: true */
-/*jslint plusplus: true */
-
-(function( $ ){
-
-	'use strict';
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else if (typeof exports === 'object') {
+    factory(require('jquery'));
+  } else {
+    factory(jQuery);
+  }
+}(function ($) {
 
 	var
 	// Cache the document selector;
@@ -1249,4 +1246,4 @@ function closure ( target, options, originalOptions ){
 // Attach a classbased val handler.
 	$.classVal(Classes[0], 'vGet', 'vSet', false);
 
-}( window['jQuery'] || window['Zepto'] ));
+}));
