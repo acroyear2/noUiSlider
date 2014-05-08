@@ -4,6 +4,7 @@
   } else if (typeof exports === 'object') {
     var jQuery = require('jquery');
     require('jquery.classval');
+    require('jquery.nouislider.Link');
     factory(jQuery);
   } else {
     factory(jQuery);
